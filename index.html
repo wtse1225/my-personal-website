@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Wai Hing William Tse">
+    <meta name="description" content="William's website">
+    <title>William's Website</title>
+    <!-- CSS Overrides -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- footer icons -->
+    <script src="https://kit.fontawesome.com/1cf483120b.js" crossorigin="anonymous"></script> 
+    <!-- Bootstrap elements for form -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul class="ul">
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- All topics are divided into sections -->
+
+        <!-- profile -->
+        <section class="profile" id="profile">
+            <picture>
+                <img class="profile-pic" src= "./files/Screenshot_2022-04-28-18-40-55-898_com.google.android.apps.photos.jpg" width="300" alt="Me">
+            </picture>
+            <p class="profile-name">Wai Hing William Tse</p>
+            <h1 class="profile-title">Business Analyst</h1>
+            <div class="profile-buttons">    
+                <a href="./files/(Latest) Wai Hing William Tse_resume.pdf" download="resume.pdf"><button class="buttons">Resume</button></a>
+                <a href="#contact"><button class="buttons">Contact Me</button></a>
+            </div>
+        </section>      
+
+        <!-- About me -->
+        <section class="aboutMe" id="aboutMe">
+            <div class="container">
+                <h1>About Me</h1>
+                <p>
+                    I'm William, a Hong Kong working professional who is now a student at <em><a href="https://www.senecacollege.ca/home.html">Seneca College</a></em>. 
+                    I am currently enrolled in a three-year diploma program in Computer Programming & Analysis.
+                </p>                  
+                <p>
+                    I was graduated from the <em><a href="https://ucsd.edu/">University of California, San Diego </a></em><abbr>(UCSD)</abbr> with a bachelor's degree
+                    in Economics in 2012. Later on I worked as an IT business analyst in the corporate finance sector at <em><a href="https://www.bochk.com/en/home.html">Bank of China</a></em>. 
+                    As my career progressed, I am hoping to expand my expertise to the technical level, and therefore I am now pursuing a programming qualification in Seneca College. I believe 
+                    being able to posses with both technical and business skills will propel my career to the next level.
+                </p>       
+            </div>
+
+            <!-- Academic Honesty & basic info -->
+            <div class="info">
+                <div class="container">   
+                    <div class="basic">
+                        <h3>Basic Information</h3>
+                        <pre><strong>AGE:</strong>               38</pre>
+                        <pre><strong>EMAIL:</strong>             wtse11@myseneca.ca</pre>
+                        <pre><strong>LANGUAGE:</strong>          English, Cantonese, Mandarine</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="education" id="education">
+            <div class="container">                
+                <h1>Education</h1>
+                <div class="school">
+                    <div class="school-front">
+                        <p>
+                            Present<br><br>
+                            Diploma
+                        </p>
+                    </div>
+                    <div class="school-back">
+                        <p>
+                            Seneca College<br><br>
+                            diploma, Computer Programming, Ontario, Toronto, CA
+                        </p>
+                    </div>
+                </div>
+
+                <div class="school">
+                    <div class="school-front">
+                        <p>
+                            2010 to 2012<br><br>
+                            Bachelor's Degree
+                        </p>
+                    </div>
+                    <div class="school-back">
+                        <p>
+                            University of California, San Diego<br><br>
+                            Bachelor of Arts, Economics (B.A.), San Diego, CA, USA
+                        </p>
+                    </div>
+                </div>
+
+                <div class="school">
+                    <div class="school-front">
+                        <p>
+                            2007 to 2010<br><br>
+                            Associate's Degree
+                        </p>
+                    </div>
+                    <div class="school-back">
+                        <p>
+                            University of California, San Diego<br><br>
+                            Associate Degree, Business Administration, Cupertino, CA, USA
+                        </p>
+                    </div>
+                </div>               
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills" id="skills">            
+            <div class="container">
+                <h1>Skills</h1>
+                <p>On going learning</p>
+                <div class="skill-set">
+                    <div class="lang">
+                        C++
+                    </div>
+                    <div class="lang">
+                        C
+                    </div>
+                    <div class="lang">
+                        Python
+                    </div>
+                    <div class="lang">
+                        JavaScript
+                    </div>
+                    <div class="lang">
+                        Linux
+                    </div>
+                    <div class="lang">
+                        SQL
+                    </div>
+                    <div class="lang">
+                        MongoDB
+                    </div>
+                    <div class="lang">
+                        HTML
+                    </div>
+                </div>
+            </div>            
+            
+            <div class="container">
+                <p>Prospect languages and technologies</p>
+                <div class="skill-set">
+                    <div class="lang-aim">
+                        C#
+                    </div>
+                    <div class="lang-aim">
+                        Tableau
+                    </div>
+                    <div class="lang-aim">
+                        Power BI
+                    </div>
+                </div>
+            </div>
+        </section>            
+
+        <!-- Contact form -->
+        <!-- Field validations are mostly done by "pattern" except for the "Other" field that dynamically generates a textarea -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <div class="container mt-3">  
+                    <form id="contact-form" action="https://httpbin.org/post" method="post"> 
+        
+                    <div class="form-row mt-5">
+                        <div class="form-group col-md-6">    
+                        <label for="name">Name</label>
+                        <input                      
+                            class="form-control mb-4"
+                            id="name"
+                            name="name"
+                            autocomplete="given-name"
+                            type="text"
+                            autofocus
+                            required
+                            tabindex="1"
+                            maxlength="30"
+                            placeholder="e.g. JohnDoe"
+                        >
+                        </div>
+        
+                        <div class="form-group col-md-6">    
+                            <label for="email">Email Address</label>
+                            <input                      
+                                class="form-control mb-4"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                type="email"
+                                autofocus
+                                required
+                                tabindex="2"
+                                maxlength="30"
+                                placeholder="e.g. JohnDoe@gmail.com"
+                                pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
+                            >
+                        </div>
+                    </div>
+                    
+                    <div class="form-group mt-2">
+                    <label for="address">Street Address</label>
+                    <input
+                        class="form-control"
+                        id="address"
+                        type="text"
+                        name="address"
+                        autocomplete="street-address"
+                        required
+                        tabindex="3"
+                    >
+                    </div>
+                    
+                    <div class="form-row mt-5">
+                        <div class="form-group col-md-6">    
+                        <label for="city">City</label>
+                        <input                      
+                            class="form-control mb-4"
+                            id="city"
+                            name="city"
+                            autocomplete="address-level2"
+                            type="text"
+                            required
+                            tabindex="4"
+                            maxlength="30"
+                        >
+                        </div>
+        
+                        <div class="form-group col-md-6">    
+                            <label for="province">Province & Postal Code</label>
+                            <select                      
+                                class="form-control mb-4"
+                                id="province"
+                                name="province"
+                                autocomplete="off"
+                                type="text"
+                                required
+                                tabindex="5"
+                                list="suggestions"
+                            >
+                            <datalist id="suggestions">
+                                <option value="AB">Alberta</option>
+	                            <option value="BC">British Columbia</option>
+	                            <option value="MB">Manitoba</option>
+	                            <option value="NB">New Brunswick</option>
+	                            <option value="NL">Newfoundland and Labrador</option>
+	                            <option value="NS">Nova Scotia</option>
+	                            <option value="ON">Ontario</option>
+	                            <option value="PE">Prince Edward Island</option>
+	                            <option value="QC">Quebec</option>
+	                            <option value="SK">Saskatchewan</option>
+	                            <option value="NT">Northwest Territories</option>
+	                            <option value="NU">Nunavut</option>
+	                            <option value="YT">Yukon</option>
+                            </datalist>
+                        </div>
+
+                        <div class="form-group col-md-6">    
+                            <label for="postal-code">Postal Code</label>
+                            <input                      
+                                class="form-control mb-4"
+                                id="postal-code"
+                                name="postal-code"
+                                autocomplete="off"
+                                type="text"
+                                required
+                                tabindex="6"
+                                pattern="^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d$"
+                                placeholder="e.g. M2J 5G3"
+                            >
+                        </div>
+                    </div>
+        
+                    <fieldset class="form-group">
+                        <div class="row">
+                          <legend class="col-form-label col-sm-2 pt-0">Contact purpose</legend>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="purpose1" value="option1" checked>
+                              <label class="form-check-label" for="purpose1">
+                                Job Offer
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="purpose2" value="option2">
+                              <label class="form-check-label" for="purpose2">
+                                School
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="purpose3" value="option3">
+                              <label class="form-check-label" for="purpose3">
+                                Other
+                              </label>
+                            </div>
+                          </div>
+                        </div>                        
+                    </fieldset>
+
+                    <!-- The hidden textarea that will be revealed by the app.js when being clicked -->
+                    <div class="form-row mt-5" id="other-field" hidden>
+                        <input                      
+                            class="form-control mb-4"
+                            id="other-field"
+                            name="other-field"
+                            autocomplete="off"
+                            type="text"
+                            maxlength="30"
+                            placeholder="e.g. Other purpose"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" placeholder="e.g. Your message here..." required rows="5"></textarea>
+                      </div>
+
+                    <div class="text-center mt-5 mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="rememberMeCheck">
+                        <label class="form-check-label" for="rememberMeCheck">
+                          Contact as soon as possible
+                        </label>
+                    </div>
+            
+                    <div class="d-flex justify-content-sm-center">
+                        <input class="btn btn-success" type="submit" name="Submit" value="Send" tabindex="5">
+                        <input class="btn btn-light ml-3" type="reset" name="Clear" value="Clear" tabindex="6">
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <!-- Footer with social media links -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Reach me on the social networks</p>
+            <a target="_blank" href="https://github.com/wtse1225"><i class="fa fa-github-alt fa-inverse fa-2x"></i></a> &nbsp;
+            <a href="https://instagram.com/ixus_tse"><i class="fa fa-instagram fa-inverse fa-2x"></i></a>
+        </div>  
+    </footer>
+    <!-- The link to the script -->
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/*
+font-family: 'Playfair Display SC', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Roboto:wght@100;400&family=Source+Sans+Pro:wght@300&display=swap');
+
+
+/* Content width setup*/
+div {
+    width: 100%;
+}
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.3em;
+    padding: 8px;
+}
+
+/* Responsive setting for smaller screen */
+@media screen and (max-width: 400px) {  
+    .ul {
+      font-size: 0.8em;
+    }  
+    .profile-name {
+      font-size: 3em;
+    }
+    .profile-title {
+      font-size: 0.5em;
+    }
+    .container {
+      padding: 0 0.5em;
+    }
+    .footer-container {
+      padding: 0 3em;
+    }
+  }
+
+/* Nav setup */
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    list-style: none;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.menu a {
+    color:#b69760;
+}
+
+/* Body setup */
+body {
+  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Alignment setup */
+.profile,
+.footer {
+  text-align: center;
+}
+
+/* Section colors */
+.aboutMe {
+    background-color: white    
+}
+.education {
+    background-color: #B5AA99;
+}
+.skills {
+    background-color: #f7f7f7;
+}
+.contact{ 
+    background-color: #98B0A8;
+}
+.footer {
+    background-color: #50AB93;
+}
+
+/* Adhoc visual fixes */
+div p {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+div h1 {
+    margin-top: 0;
+    padding-top: 0.5em;
+}
+
+/* Profile section setup */
+.profile {
+  padding: 5em 0;
+  background-image: url("./files/emerson-peters-8T_EacPRf0g-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: solid 2em #b69760;
+}
+
+.profile-pic {
+    border-radius: 30%;
+}
+
+.profile-name {
+  margin-top: 0.8em;
+  margin-bottom: 0.6em;  
+  font-family: 'Playfair Display SC', serif;
+  font-size: 4em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  height: 100%;
+}
+
+.profile-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.buttons {
+    background-color:#b69760;
+    color: white;
+    border: none;
+    border-radius:10px;
+    padding:10px;
+    min-height:30px; 
+    min-width: 100px;
+}
+
+/* About me setup */
+/* 3 divs are displayed in flex
+.info .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.honesty {
+    flex: 1;
+    margin-right: 1.5em;
+}
+.basic {
+    flex: 1;
+    line-height: 1em;
+}*/
+
+/* Education setup */
+/* 3 divs are displayed in grid */
+.school {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width:90%;
+    margin: 10px 5px;
+}
+
+.school-front {
+    background-color: #00B3BF;
+    color: white;
+    padding: 5px;
+}
+
+.school-back {
+    background-color: #f7f7f7;
+    padding: 5px;
+}
+
+/* Skills setup */
+.skills {
+    padding-bottom: 20px;
+}
+
+.skill-set {
+    display: grid;    
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.lang {
+    background-color:#b69760;
+    color: white;
+    border-radius:30px;
+    padding:10px;
+    min-height:10px; 
+    text-align: center;
+    max-width: 90px;
+}
+
+.lang-aim {
+    background-color:#B5AA99;
+    color: white;
+    border-radius:30px;
+    padding:10px;
+    min-height:10px; 
+    text-align: center;
+    max-width: 90px;
+}
+
+/* Footer setup */
+.footer {
+    padding: 2em 0;
+    margin-top: 3em;
+  }
+  
+.fa-stack fa-lg {
+  display: inline-block;
+}
+
+.footer-container > p {
+  color: white;
+}
+
+
+/* Links text style and colors */
+a {
+  text-decoration: none;
+  font-weight: bold;  
+}
+
+main a {
+    color: #b69760;
+}
+
+a:link {
+  color: #b69760;
+}
+
